@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "core-web-vitals",
+  "version": "1.0.0",
+  "description": "Tests for Core Web Vital metrics.",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --directory ."
+  },
+  "author": "Tanner Hodges <me@tannerhodges.com>",
+  "license": "MIT"
+}
