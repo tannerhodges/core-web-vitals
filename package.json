@@ -1,12 +1,13 @@
 {
   "private": true,
   "name": "core-web-vitals",
-  "version": "1.0.0",
-  "description": "Tests for Core Web Vital metrics.",
-  "main": "index.js",
+  "version": "1.1.0",
+  "description": "Testing how Lighthouse measures Core Web Vitals.",
   "scripts": {
-    "start": "browser-sync start --server --directory ."
+    "start": "http-server -p 8080"
   },
-  "author": "Tanner Hodges <me@tannerhodges.com>",
-  "license": "MIT"
+  "dependencies": {
+    "http-server": "0.12.3",
+    "lighthouse": "6.4.1"
+  }
 }
