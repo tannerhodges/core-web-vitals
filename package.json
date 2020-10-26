@@ -4,7 +4,8 @@
   "version": "1.1.0",
   "description": "Testing how Lighthouse measures Core Web Vitals.",
   "scripts": {
-    "start": "http-server -p 8080"
+    "start": "http-server -p 8080",
+    "test": "rm -rf lighthouse/; mkdir lighthouse/; cd lighthouse; for ((i = 0; i < 3; i++)); do lighthouse http://localhost:8080/fcp/opacity.html --preset=perf; done"
   },
   "dependencies": {
     "http-server": "0.12.3",
