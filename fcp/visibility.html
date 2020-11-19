@@ -9,23 +9,6 @@
   <meta name="description" content="">
   <meta name="robots" content="noindex, nofollow">
 
-  <!-- Performance -->
-  <script>
-    try {
-      const po = new PerformanceObserver((entryList) => {
-        const entries = entryList.getEntries();
-        const lastEntry = entries[entries.length - 1];
-        // Add performance metrics to the page so they show up in PSI screenshots.
-        document.querySelector('#fcp').innerHTML = performance.getEntriesByName('first-contentful-paint')[0].startTime.toFixed(2);
-        document.querySelector('#lcp').innerHTML = lastEntry.startTime.toFixed(2);
-      });
-
-      po.observe({ type: 'largest-contentful-paint', buffered: true });
-    } catch (e) {
-      // Do nothing if the browser doesn't support this API.
-    }
-  </script>
-
   <!-- Scripts -->
   <script>document.documentElement.className = document.documentElement.className.replace(/no-js/g, 'js');</script>
   <script>function loadJS(c,e){var n=document.createElement("script");n.src=c,n.async=e,document.head.appendChild(n)}</script>
@@ -65,10 +48,5 @@
       </ul>
     </div>
   </div>
-
-  <dl>
-    <dt>First Contentful Paint</dt><dd id="fcp">(unsupported)</dd>
-    <dt>Largest Contentful Paint</dt><dd id="lcp">(unsupported)</dd>
-  </dl>
 </body>
 </html>
