@@ -10,15 +10,6 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/opensans-regular-webfont.woff2) format("woff2"), url(../fonts/opensans-regular-webfont.woff) format("woff");
 }
 
 .container {
